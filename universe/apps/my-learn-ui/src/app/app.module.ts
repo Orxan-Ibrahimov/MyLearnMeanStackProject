@@ -9,11 +9,14 @@ import { Route, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MenuComponent } from './shared/menu/menu.component';
+import { HomeRoutingModule } from './home/home-routing.module';
+import { NotFoundCavemanComponent } from 'libs/mlui/src/lib/components/not-found-caveman/not-found-caveman.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: 'login', component: NeonLoginComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'not-found', component: NotFoundCavemanComponent },
 ];
 @NgModule({
   declarations: [
@@ -24,8 +27,9 @@ const routes: Route[] = [
     FooterComponent,
     HeaderComponent,
     MenuComponent,
+    NotFoundCavemanComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, HomeRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })
