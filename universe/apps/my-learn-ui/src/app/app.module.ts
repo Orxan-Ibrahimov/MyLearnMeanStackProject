@@ -18,6 +18,7 @@ import { PlaylistDetailComponent } from 'libs/mlui/src/lib/components/courses/pl
 import { PlaylistVideosComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/playlist-videos.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { PlaylistVideoItemComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-item/playlist-video-item.component';
+import { VideoDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-detail/video-detail.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -29,6 +30,7 @@ const routes: Route[] = [
       { path: 'main', component: MainComponent },
       { path: 'courses', component: CoursesComponent },
       { path: 'playlist', component: PlaylistComponent },
+      { path: 'video-detail', component: VideoDetailComponent },
     ],
   },
   { path: 'not-found', component: NotFoundCavemanComponent },
@@ -47,6 +49,7 @@ const routes: Route[] = [
     CourseItemComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
+    VideoDetailComponent,
     PlaylistVideoItemComponent,
     MenuComponent,
     NotFoundCavemanComponent,
