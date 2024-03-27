@@ -1,18 +1,7 @@
-<!-- <div class="container" [ngClass]="{'hide' : hiddenMenu}">
-    <online-education-menu (dataFromMenu)="GetDataFromMenu($event)" [data]="hiddenMenu"></online-education-menu>
+<div class="container" [ngClass]="{'hide' : hiddenMenu}">
+    <universe-menu (dataFromMenu)="GetDataFromMenu($event)"></universe-menu>
     <div class="content">
-    <online-education-header (dataFromHeader)="GetDataFromHeader($event)"
-    [data]="hiddenMenu"></online-education-header>
-    <main>        
-        <router-outlet></router-outlet>
-    </main>
-    <online-education-footer></online-education-footer>
-</div>
-</div> -->
-<div class="container">
-    <universe-menu></universe-menu>
-    <div class="content">
-        <universe-header></universe-header>
+        <universe-header (dataFromHeader)="GetDataFromHeader($event)" [data]="hiddenMenu"></universe-header>
         <main>
             <router-outlet></router-outlet>
         </main>

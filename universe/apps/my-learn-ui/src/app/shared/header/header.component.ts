@@ -2,8 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'universe-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
   
@@ -12,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   @Input()
   colorData!: boolean;
-  
+
   @Output() dataFromHeader: EventEmitter<{    
     isHidden: boolean;
   }> = new EventEmitter<{ isHidden: boolean }>();
@@ -26,6 +25,7 @@ export class HeaderComponent implements OnInit {
     this.data = !this.data;
     this.SendData();
   }
+
 
   MakeDark() {
     this.colorData = !this.colorData;

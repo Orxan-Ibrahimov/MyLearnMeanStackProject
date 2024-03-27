@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() {}
+  hiddenMenu = false;
 
   ngOnInit(): void {}
+
+   GetDataFromMenu(data: boolean) {
+    this.hiddenMenu = data;
+  }
+
+  GetDataFromHeader(dataFromHeader: { isHidden: boolean }) {
+    this.hiddenMenu = dataFromHeader.isHidden;
+  }
 }

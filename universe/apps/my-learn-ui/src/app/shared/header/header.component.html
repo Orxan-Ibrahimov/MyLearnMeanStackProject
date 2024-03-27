@@ -12,7 +12,7 @@
 
   <ul class="controller-list">
     <li class="controller-item">
-      <button type="button" class="controller-button">
+      <button type="button" (click)="HideMenu()" class="controller-button">
         <i class="fa-solid fa-bars"></i>
       </button>
     </li>
@@ -22,8 +22,11 @@
       </button>
     </li>
     <li class="controller-item">
-      <button type="button" class="controller-button">
-        <i class="fa-solid"></i>
+      <button type="button" (click)="MakeDark()" class="controller-button">
+        <i
+          class="fa-solid"
+          [ngClass]="{ 'fa-sun': colorData, 'fa-moon': !colorData }"
+        ></i>
       </button>
     </li>
   </ul>
