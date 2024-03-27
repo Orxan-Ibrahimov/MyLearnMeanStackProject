@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'universe-neon-login',
-  templateUrl: './neon-login.component.html',
-  styleUrls: ['./neon-login.component.scss']
+  templateUrl: './neon-login.component.html'
 })
 export class NeonLoginComponent implements OnInit {
   constructor() {}

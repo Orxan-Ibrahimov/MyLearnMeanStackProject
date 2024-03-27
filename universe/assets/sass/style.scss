@@ -2,10 +2,6 @@
 @import './base/color';
 @import './base/reset';
 
-// libs
-@import './pages/neon-registration';
-@import './pages/not-found-caveman';
-
 // shared styles
 @import './shared/menu';
 @import './shared/header';
@@ -16,6 +12,9 @@
 @import './pages/courses/course-option';
 @import './pages/courses/course-item';
 
+// libs
+@import './pages/neon-registration';
+@import './pages/not-found-caveman';
 
 body{
     background-color: var(--light-bg);
