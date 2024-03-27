@@ -239,6 +239,102 @@
   font-weight: 900;
 }
 
+header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  border-top: 2px solid var(--light-bg);
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+header > .nav-brand > .brand {
+  font-size: 1.5rem;
+}
+header > .form-search {
+  background-color: var(--light-bg);
+  border-radius: 0.4rem;
+  padding: 0 1rem;
+}
+header > .form-search > .search-input {
+  background-color: transparent;
+  width: 300px;
+  height: 40px;
+}
+header > .form-search > .search-icon {
+  cursor: pointer;
+}
+header > .controller-list {
+  display: flex;
+}
+header > .controller-list > .controller-item > .controller-button {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  background-color: var(--light-bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: var(--dark-color);
+}
+header > .controller-list > .controller-item > .controller-button:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  transition: 0.4s background-color;
+}
+header > .mini-profile {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--white-color);
+  top: 100%;
+  right: 0;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: fit-content;
+  overflow: hidden;
+}
+header > .mini-profile > .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+header > .mini-profile > .profile-role {
+  color: var(--light-color);
+}
+header > .mini-profile .buton {
+  width: 125px;
+  border-radius: 0.2rem;
+  margin: 0.4rem;
+}
+header > .mini-profile .buton-group {
+  display: flex;
+}
+header > .mini-profile .buton-group .buton {
+  background: var(--orange-color);
+}
+header > .mini-profile .buton-group .buton:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+header > .mini-profile > .buton-fluid {
+  width: 90%;
+}
+header > .mini-profile.hide {
+  height: 0px;
+  width: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  header > .form-search {
+    display: none;
+  }
+}
 footer {
   height: 75px;
   position: fixed;

@@ -7,6 +7,7 @@ import { InceptionComponent } from './inception/inception.component';
 import { HomeComponent } from './home/home.component';
 import { Route, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -20,6 +21,7 @@ const routes: Route[] = [
     NeonLoginComponent,
     HomeComponent,
     FooterComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
