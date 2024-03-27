@@ -1,0 +1,93 @@
+{
+  "projectType": "application",
+  "root": "apps/my-learn-ui",
+  "sourceRoot": "apps/my-learn-ui/src",
+  "prefix": "universe",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/my-learn-ui",
+        "index": "apps/my-learn-ui/src/index.html",
+        "main": "apps/my-learn-ui/src/main.ts",
+        "polyfills": "apps/my-learn-ui/src/polyfills.ts",
+        "tsConfig": "apps/my-learn-ui/tsconfig.app.json",
+        "assets": [
+          "apps/my-learn-ui/src/favicon.ico",
+          "apps/my-learn-ui/src/assets"
+        ],
+        "styles": ["apps/my-learn-ui/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/my-learn-ui/src/environments/environment.ts",
+              "with": "apps/my-learn-ui/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "my-learn-ui:build:production"
+        },
+        "development": {
+          "browserTarget": "my-learn-ui:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "my-learn-ui:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/my-learn-ui/src/**/*.ts",
+          "apps/my-learn-ui/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/my-learn-ui"],
+      "options": {
+        "jestConfig": "apps/my-learn-ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
