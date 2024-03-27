@@ -25,7 +25,9 @@ export class HeaderComponent implements OnInit {
     this.data = !this.data;
     this.SendData();
   }
-
+  HideProfile(){
+    this.isHidden = !this.isHidden;
+  }
 
   MakeDark() {
     this.colorData = !this.colorData;

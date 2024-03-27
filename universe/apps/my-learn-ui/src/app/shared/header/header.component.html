@@ -17,7 +17,7 @@
       </button>
     </li>
     <li class="controller-item">
-      <button type="button" class="controller-button">
+      <button type="button" (click)="HideProfile()" class="controller-button">
         <i class="fa-solid fa-user"></i>
       </button>
     </li>
@@ -31,7 +31,7 @@
     </li>
   </ul>
 
-  <div class="mini-profile">
+  <div class="mini-profile" [ngClass]="{'hide': isHidden}">
     <img
       src="../assets/images/avatar-g.jpg"
       class="profile-image"
