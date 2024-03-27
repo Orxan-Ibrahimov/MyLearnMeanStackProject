@@ -17,7 +17,9 @@
           "apps/my-learn-ui/src/favicon.ico",
           "apps/my-learn-ui/src/assets"
         ],
-        "styles": ["apps/my-learn-ui/src/styles.css"],
+        "styles": [         
+          "assets/css/style.min.css"
+        ],
         "scripts": []
       },
       "configurations": {
