@@ -1,0 +1,168 @@
+.card-profile {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    height: fit-content;
+    display: inline-block;
+    color: var(--dark-color);
+    position: relative;
+  
+    & > .card-header {
+      display: flex;
+      align-items: center;
+      position: relative;
+  
+      & > .img-profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }   
+    }
+  
+    & > .card-body {
+      position: relative;
+  
+      & .img-course {
+        width: 100%;
+      }
+  
+      & > .comment-box {
+        background-color: var(--light-bg);
+        padding: 0.5rem;
+        margin: 1.5rem 0;
+        border-radius: 0.4rem;
+        position: relative;
+        border: none;
+  
+        & > .comment {
+          padding: 0.5rem 0;
+          overflow-x: scroll;
+        }
+  
+        &::before {
+          content: '';
+          position: absolute;
+          left: 25px;
+          top: 0;
+          border-style: solid;
+          border-width: 0 10px 15px 10px;
+          border-color: transparent transparent var(--light-bg) transparent;
+          transform: rotate(0deg) translate(-50%, -100%);
+        }
+      }
+  
+      & .card-playlist {
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        background-color: var(--playlist-bg);
+        color: var(--white-color);
+        font-size: small;
+        display: inline-block;
+        padding: 0.2rem 0.8rem;
+        border-radius: 0.3rem;
+      }
+  
+      & > .card-profile-title {
+        font-weight: 900;
+      }
+  
+      & > .card-profile-date {
+        font-size: small;
+        color: var(--light-color);
+      }
+    } 
+  }
+  
+  .education-flex {
+    & .card-video {
+      & > .card-header {
+        & > .img-video {
+          width: 100%;
+        }
+  
+        & > .play-icon {
+          content: '';
+          position: absolute;
+          display: none;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: var(--white-color);
+          z-index: 1;
+          font-size: 3rem;
+        }
+  
+      }
+  
+      &:hover {
+        & > .card-header {
+          background-color: black;
+          & > .img-video {
+            opacity: 0.7;
+          }
+          & > .play-icon {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  
+  .education-video-bg {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    height: fit-content;
+    display: inline-block;
+    color: var(--dark-color);
+  
+    & > .education-video-details {
+      & > .card-text {
+        color: var(--dark-color);
+      }
+  
+      & > .sub-details {
+        margin: 1rem 0;
+        font-size: small;
+        color: var(--light-color);
+  
+        & > .video-icon {
+          color: var(--main-color);
+          margin-right: 0.3rem;
+        }
+      }
+    }
+  
+    & > .card-profile {
+      border-top: 1px solid var(--light-color);
+      & > .card-header {
+        & > .arrange-justify {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 1rem;
+  
+          & > .like-buton {
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+            padding: 0.5rem 1rem;
+            transition: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .comment-box {
+    background-color: var(--light-bg);
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--light-color);
+  }
+  

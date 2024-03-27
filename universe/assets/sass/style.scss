@@ -2,17 +2,19 @@
 @import './base/color';
 @import './base/reset';
 
-//shared styles
+// libs
+@import './pages/neon-registration';
+@import './pages/not-found-caveman';
+
+// shared styles
 @import './shared/menu';
 @import './shared/header';
 @import './shared/footer';
 
-//pages styles
+// pages styles
 @import './pages/home';
-
-// libs
-@import './pages/neon-registration';
-@import './pages/not-found-caveman';
+@import './pages/courses/course-option';
+@import './pages/courses/course-item';
 
 
 body{
