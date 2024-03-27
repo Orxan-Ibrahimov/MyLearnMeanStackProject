@@ -17,6 +17,7 @@ const routes: Route[] = [
   { path: 'login', component: NeonLoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'not-found', component: NotFoundCavemanComponent },
+  { path: '**', redirectTo:'not-found' },
 ];
 @NgModule({
   declarations: [
