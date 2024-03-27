@@ -1,3 +1,17 @@
 // base styles
 @import './base/color';
 @import './base/reset';
+
+//shared styles
+@import './shared/footer';
+
+//pages styles
+@import './pages/home';
+
+// registration
+@import './pages/neon-registration';
+
+
+body{
+    background-color: var(--light-bg);
+}

@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "mlui": "libs/mlui",
     "my-learn-ui": "apps/my-learn-ui",
     "my-learn-ui-e2e": "apps/my-learn-ui-e2e"
   }

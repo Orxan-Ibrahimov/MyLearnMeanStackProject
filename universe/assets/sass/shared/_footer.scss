@@ -1,0 +1,18 @@
+footer{
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--light-bg);
+    background-color: var(--white-color);
+    color: var(--dark-color);  
+
+    & > .copyright{
+        & > .copyright-link{
+            color: var(--main-color);
+        }
+    }
+}
+  
