@@ -1,43 +1,45 @@
 <header>
-    <div class="nav-brand">
-        <p class="brand">MyLearn</p>
+  <div class="nav-brand">
+    <p class="brand">MyLearn</p>
+  </div>
+
+  <form class="form-search">
+    <input type="text" class="search-input" placeholder="search courses" />
+    <span class="search-icon"
+      ><i class="fa-solid fa-magnifying-glass"></i
+    ></span>
+  </form>
+
+  <ul class="controller-list">
+    <li class="controller-item">
+      <button type="button" class="controller-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </li>
+    <li class="controller-item">
+      <button type="button" class="controller-button">
+        <i class="fa-solid fa-user"></i>
+      </button>
+    </li>
+    <li class="controller-item">
+      <button type="button" class="controller-button">
+        <i class="fa-solid"></i>
+      </button>
+    </li>
+  </ul>
+
+  <div class="mini-profile">
+    <img
+      src="../assets/images/avatar-g.jpg"
+      class="profile-image"
+      alt="avatar"
+    />
+    <h4 class="profile-user">shaik anas</h4>
+    <small class="profile-role">student</small>
+    <a routerLink="profile" class="buton buton-fluid">View Profile</a>
+    <div class="buton-group">
+      <a routerLink="login" class="buton">Login</a>
+      <a routerLink="register" class="buton">Register</a>
     </div>
-
-    <form class="form-search">
-        <input type="text" class="search-input" placeholder="search courses" />
-        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-    </form>
-
-    <ul class="controller-list">
-        <li class="controller-item"><button type="button" class="controller-button"><i class="fa-solid fa-bars"></i></button></li>
-        <li class="controller-item"><button type="button" class="controller-button"><i class="fa-solid fa-user"></i></button></li>
-        <li class="controller-item"><button type="button" class="controller-button"><i class="fa-solid"></i></button></li>
-    </ul>
-
-    <!-- <ul class="controller-list">
-        <li class="controller-item"><button type="button" (click)="HideMenu()" class="controller-button"><i class="fa-solid fa-bars"></i></button></li>
-        <li class="controller-item"><button type="button" (click)="HideProfile()" class="controller-button"><i class="fa-solid fa-user"></i></button></li>
-        <li class="controller-item"><button type="button" (click)="MakeDark()" class="controller-button"><i class="fa-solid" [ngClass]="{'fa-sun': colorData,'fa-moon':!colorData} "></i></button></li>
-    </ul> -->
-
-    <div class="mini-profile">
-        <img src="../assets/images/avatar-g.jpg" class="profile-image" alt="avatar" />
-        <h4 class="profile-user">shaik anas</h4>
-        <small class="profile-role">student</small>
-        <a routerLink="profile" class="buton buton-fluid">View Profile</a>
-        <div class="buton-group">
-            <a routerLink="login" class="buton">Login</a>
-            <a routerLink="register" class="buton">Register</a>
-        </div>
-    </div>
-    <!-- <div class="mini-profile" [ngClass]="{'hide':isHidden}">
-        <img src="../assets/images/avatar-g.jpg" class="profile-image" alt="avatar" />
-        <h4 class="profile-user">shaik anas</h4>
-        <small class="profile-role">student</small>
-        <a routerLink="profile" class="buton buton-fluid">View Profile</a>
-        <div class="buton-group">
-            <a routerLink="login" class="buton">Login</a>
-            <a routerLink="register" class="buton">Register</a>
-        </div>
-    </div> -->
+  </div>
 </header>

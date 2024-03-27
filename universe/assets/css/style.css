@@ -239,6 +239,71 @@
   font-weight: 900;
 }
 
+.nav {
+  width: 300px;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  border-right: 2px solid var(--light-bg);
+  z-index: 2;
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+.nav > .nav-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.nav > .nav-profile > .close {
+  display: none;
+  align-self: flex-end;
+  margin: 0 1rem 2rem 1rem;
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.nav > .nav-profile > .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.nav > .nav-profile > .profile-user {
+  margin-top: 0.3rem 0;
+}
+.nav > .nav-profile > .profile-role {
+  color: var(--light-color);
+  font-weight: 500;
+}
+.nav > .nav-profile > .buton {
+  width: 80%;
+  margin: 0.7rem 0;
+}
+.nav > .menu-list > .menu-item > .menu-link {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 10%;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+.nav > .menu-list > .menu-item > .menu-link:hover {
+  background-color: var(--light-bg);
+}
+.nav > .menu-list > .menu-item > .menu-link:hover > .menu-text {
+  transform: translateX(0.5rem);
+}
+.nav > .menu-list > .menu-item > .menu-link > .menu-text {
+  display: inline-block;
+  text-transform: lowercase;
+  margin-left: 1rem;
+  color: var(--light-color);
+}
+
 header {
   height: 75px;
   position: fixed;

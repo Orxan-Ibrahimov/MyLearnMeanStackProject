@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { Route, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { MenuComponent } from './shared/menu/menu.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -22,6 +23,7 @@ const routes: Route[] = [
     HomeComponent,
     FooterComponent,
     HeaderComponent,
+    MenuComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

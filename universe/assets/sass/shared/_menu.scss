@@ -1,0 +1,82 @@
+
+.nav {
+    width: 300px;
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    // left: 0;
+    border-right: 2px solid var(--light-bg);
+    z-index: 2;
+    background-color: var(--white-color);
+    color: var(--dark-color);  
+    
+  
+    & > .nav-profile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 0;
+  
+      & > .close {
+        display: none;
+        align-self: flex-end;
+        margin: 0 1rem 2rem 1rem;
+        background-color: var(--danger-color);
+        color: var(--white-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 2;
+      }
+      & > .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+  
+      & > .profile-user {
+        margin-top: 0.3rem 0;
+      }
+      & > .profile-role {
+        color: var(--light-color);
+        font-weight: 500;
+      }
+  
+      & > .buton {
+        width: 80%;
+        margin: 0.7rem 0;
+      }
+    }
+  
+    & > .menu-list {
+      & > .menu-item {
+        & > .menu-link {
+          display: inline-block;
+          width: 100%;
+          padding: 1rem 10%;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 1.3rem;
+          color: var(--main-color);
+  
+          &:hover {
+            background-color: var(--light-bg);
+  
+            & > .menu-text {
+              transform: translateX(0.5rem);
+            }
+          }
+  
+          & > .menu-text {
+            display: inline-block;
+            text-transform: lowercase;
+            margin-left: 1rem;
+            color: var(--light-color);
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
