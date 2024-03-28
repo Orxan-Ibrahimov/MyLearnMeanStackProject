@@ -16,9 +16,10 @@
 @import './pages/about/about';
 @import './pages/contact/contact';
 @import './pages/teacher/teacher';
+@import './pages/registration/registration';
 
 // libs
-@import './pages/neon-registration';
+@import './pages/registration/neon-registration';
 @import './pages/not-found-caveman';
 
 body{

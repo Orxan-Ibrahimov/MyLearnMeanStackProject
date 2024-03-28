@@ -26,6 +26,7 @@ import { AboutComponent } from 'libs/mlui/src/lib/components/about/about.compone
 import { TeachersComponent } from 'libs/mlui/src/lib/components/teachers/teachers.component';
 import { TeacherItemComponent } from 'libs/mlui/src/lib/components/teachers/teacher-item/teacher-item.component';
 import { StudentReviewsComponent } from 'libs/mlui/src/lib/components/about/reviews/student-reviews.component';
+import { ProfileComponent } from 'libs/mlui/src/lib/components/registration/profile/profile.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -41,6 +42,7 @@ const routes: Route[] = [
       { path: 'contact', component: ContactComponent },
       { path: 'about', component: AboutComponent },
       { path: 'teachers', component: TeachersComponent },
+      { path: 'profile', component: ProfileComponent },
     ],
   },
   { path: 'not-found', component: NotFoundCavemanComponent },  
@@ -60,6 +62,7 @@ const routes: Route[] = [
     CourseItemComponent,
     AboutComponent,
     TeachersComponent,
+    ProfileComponent,
     TeacherItemComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
