@@ -35,6 +35,7 @@ const routes: Route[] = [
     path: 'home',
     component: HomeComponent,
     children: [
+      {path:'', redirectTo: 'main', pathMatch: 'full'},
       { path: 'main', component: MainComponent },
       { path: 'courses', component: CoursesComponent },
       { path: 'playlist', component: PlaylistComponent },
