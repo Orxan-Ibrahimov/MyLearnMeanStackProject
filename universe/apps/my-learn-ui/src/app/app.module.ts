@@ -17,6 +17,8 @@ import { CourseItemComponent } from 'libs/mlui/src/lib/components/courses/course
 import { PlaylistDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/detail/playlist-detail.component';
 import { PlaylistVideosComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/playlist-videos.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { ContactComponent } from 'libs/mlui/src/lib/components/contact/contact.component';
+import { ContactAddressComponent } from 'libs/mlui/src/lib/components/contact/address/contact-address.component';
 import { PlaylistVideoItemComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-item/playlist-video-item.component';
 import { VideoDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-detail/video-detail.component';
 
@@ -31,9 +33,10 @@ const routes: Route[] = [
       { path: 'courses', component: CoursesComponent },
       { path: 'playlist', component: PlaylistComponent },
       { path: 'video-detail', component: VideoDetailComponent },
+      { path: 'contact', component: ContactComponent },
     ],
   },
-  { path: 'not-found', component: NotFoundCavemanComponent },
+  { path: 'not-found', component: NotFoundCavemanComponent },  
   { path: '**', redirectTo: 'not-found' },
 ];
 @NgModule({
@@ -45,11 +48,13 @@ const routes: Route[] = [
     FooterComponent,
     HeaderComponent,
     CoursesComponent,
+    ContactAddressComponent,
     CourseOptionsComponent,
     CourseItemComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
     VideoDetailComponent,
+    ContactComponent,
     PlaylistVideoItemComponent,
     MenuComponent,
     NotFoundCavemanComponent,

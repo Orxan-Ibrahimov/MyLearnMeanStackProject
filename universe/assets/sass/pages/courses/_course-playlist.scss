@@ -2,6 +2,30 @@
     background-color: var(--white-color);
     padding: 1rem;
     margin: 1rem 0;
+
+    // > .headline {
+    //     text-transform: capitalize;
+    //     color: var(--dark-color);
+    //     padding: 1rem 0;
+    //     border-bottom: 1px solid var(--dark-color);
+    
+    //      .special-headline {
+    //       position: relative;
+    //       padding-right: 0.2rem;
+    //       color: var(--main-color);
+    //       &::before {
+    //         content: '';
+    //         position: absolute;
+    //         width: 100%;
+    //         height: 100%;
+    //         background-color: var(--light-bg);
+    //         border-left: 2px solid var(--main-color);
+    //         left: 0;
+    //         top: 0;
+    //         animation: 3s WordWrapper steps(12) infinite, .5s flash infinite, ;
+    //       }
+    //     }
+    //   }
     
     & > .education-playlist {
       
