@@ -1,0 +1,72 @@
+.education-container {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin-bottom: 5rem;
+  
+    & > .education-left {
+      display: inline-block;
+      width: 100%;
+      & > .img-education {
+        width: 100%;
+      }
+    }
+    & > .education-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+  
+      & > .about-title {
+        color: var(--dark-color);
+      }
+  
+      & > .about-text {
+        line-height: 1.9;
+        margin: 1rem 0;
+        color: var(--light-color);
+      }
+    }
+  }
+  .mini-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    & > .mini-card {
+      display: flex;
+      align-items: center;   
+      background-color: var(--white-color);
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      margin: 1rem 0;    
+  
+      &:last-of-type {
+        margin-right: 0;
+      }
+  
+      .mini-icon {
+        font-size: xx-large;
+        color: var(--main-color);
+      }
+  
+      .mini-text {
+        color: var(--light-color);
+      }
+    }
+  }
+  .card-review {
+    width: 30%;
+    padding: 0 1rem !important;
+   
+    & > .card-footer {
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .education-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  

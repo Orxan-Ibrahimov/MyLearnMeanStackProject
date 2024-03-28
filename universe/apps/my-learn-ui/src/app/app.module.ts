@@ -21,6 +21,8 @@ import { ContactComponent } from 'libs/mlui/src/lib/components/contact/contact.c
 import { ContactAddressComponent } from 'libs/mlui/src/lib/components/contact/address/contact-address.component';
 import { PlaylistVideoItemComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-item/playlist-video-item.component';
 import { VideoDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-detail/video-detail.component';
+import { AboutComponent } from 'libs/mlui/src/lib/components/about/about.component';
+import { StudentReviewsComponent } from 'libs/mlui/src/lib/components/about/reviews/student-reviews.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
@@ -34,6 +36,7 @@ const routes: Route[] = [
       { path: 'playlist', component: PlaylistComponent },
       { path: 'video-detail', component: VideoDetailComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'about', component: AboutComponent },
     ],
   },
   { path: 'not-found', component: NotFoundCavemanComponent },  
@@ -51,12 +54,14 @@ const routes: Route[] = [
     ContactAddressComponent,
     CourseOptionsComponent,
     CourseItemComponent,
+    AboutComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
     VideoDetailComponent,
     ContactComponent,
     PlaylistVideoItemComponent,
     MenuComponent,
+    StudentReviewsComponent,
     NotFoundCavemanComponent,
     PlaylistComponent,
   ],
