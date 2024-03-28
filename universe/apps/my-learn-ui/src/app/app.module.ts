@@ -24,6 +24,7 @@ import { PlaylistVideoItemComponent } from 'libs/mlui/src/lib/components/courses
 import { VideoDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-detail/video-detail.component';
 import { AboutComponent } from 'libs/mlui/src/lib/components/about/about.component';
 import { TeachersComponent } from 'libs/mlui/src/lib/components/teachers/teachers.component';
+import { TeacherItemComponent } from 'libs/mlui/src/lib/components/teachers/teacher-item/teacher-item.component';
 import { StudentReviewsComponent } from 'libs/mlui/src/lib/components/about/reviews/student-reviews.component';
 
 const routes: Route[] = [
@@ -59,6 +60,7 @@ const routes: Route[] = [
     CourseItemComponent,
     AboutComponent,
     TeachersComponent,
+    TeacherItemComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
     VideoDetailComponent,
