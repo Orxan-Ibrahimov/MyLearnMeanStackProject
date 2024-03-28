@@ -1,3 +1,4 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -22,6 +23,7 @@ import { ContactAddressComponent } from 'libs/mlui/src/lib/components/contact/ad
 import { PlaylistVideoItemComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-item/playlist-video-item.component';
 import { VideoDetailComponent } from 'libs/mlui/src/lib/components/courses/playlists/videos/video-detail/video-detail.component';
 import { AboutComponent } from 'libs/mlui/src/lib/components/about/about.component';
+import { TeachersComponent } from 'libs/mlui/src/lib/components/teachers/teachers.component';
 import { StudentReviewsComponent } from 'libs/mlui/src/lib/components/about/reviews/student-reviews.component';
 
 const routes: Route[] = [
@@ -37,6 +39,7 @@ const routes: Route[] = [
       { path: 'video-detail', component: VideoDetailComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'teachers', component: TeachersComponent },
     ],
   },
   { path: 'not-found', component: NotFoundCavemanComponent },  
@@ -55,6 +58,7 @@ const routes: Route[] = [
     CourseOptionsComponent,
     CourseItemComponent,
     AboutComponent,
+    TeachersComponent,
     PlaylistVideosComponent,
     PlaylistDetailComponent,
     VideoDetailComponent,

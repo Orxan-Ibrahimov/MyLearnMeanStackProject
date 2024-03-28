@@ -915,6 +915,74 @@ footer > .copyright > .copyright-link {
   color: var(--light-color);
 }
 
+.search-box {
+  position: relative;
+}
+.search-box .search {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+.search-box > .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--dark-color);
+}
+
+.card-teacher {
+  width: 100% !important;
+  background-color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  height: fit-content;
+}
+.card-teacher > .card-header {
+  text-align: center;
+  text-transform: capitalize;
+}
+.card-teacher > .card-header > .img-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.card-teacher > .card-body {
+  text-align: center;
+  line-height: 1.7;
+}
+.card-teacher > .card-body .img-course {
+  width: 100%;
+}
+.card-teacher > .card-body .card-playlist {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  background-color: var(--playlist-bg);
+  color: var(--white-color);
+  font-size: small;
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.3rem;
+}
+.card-teacher > .card-body > .card-profile-title {
+  font-weight: 900;
+}
+.card-teacher > .card-body > .card-profile-date {
+  font-size: small;
+  color: var(--light-color);
+}
+.card-teacher > .card-footer {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
 section.neon-login {
   width: 100%;
   height: 100vh;
